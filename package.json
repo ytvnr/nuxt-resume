@@ -14,6 +14,9 @@
     "test": "jest",
     "deploy": "gh-pages -d ./dist -m 'Github Pages deployment 💪'"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "nuxt": "^2.0.0",
     "@nuxt/typescript-runtime": "^0.4.0"
@@ -32,6 +35,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
     "jest": "^24.1.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
     "push-dir": "^0.4.1",
     "ts-jest": "^25.0.0",
