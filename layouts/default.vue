@@ -11,9 +11,15 @@
                 >
             </v-btn>
 
-            <v-toolbar-title><strong>YANN</strong>TAVERNIER</v-toolbar-title>
+            <v-toolbar-title class="logo">
+                <span class="logo-curly">{&nbsp;</span>
+                <span class="logo-content"><strong>yann: </strong>tavernier</span>
+                <span class="logo-curly">&nbsp;}</span>
+            </v-toolbar-title>
 
             <v-spacer></v-spacer>
+
+            <nr-language-switcher />
         </v-app-bar>
 
         <v-content>
@@ -30,10 +36,12 @@
 
 <script>
 import Drawer from '@/components/Drawer.vue';
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue';
 
 export default {
     components: {
-        'nr-drawer': Drawer
+        'nr-drawer': Drawer,
+        'nr-language-switcher': LanguageSwitcher
     },
     data() {
         return {
@@ -61,3 +69,22 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+
+    &-curly {
+        color: $nr-yellow;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    &-content {
+        color: white;
+    }
+}
+</style>

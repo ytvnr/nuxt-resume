@@ -31,7 +31,7 @@ export default {
     /*
      ** Global CSS
      */
-    css: [],
+    css: ['@/assets/variables.scss'],
     /*
      ** Plugins to load before mounting the App
      */
@@ -43,7 +43,9 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: [
+      'nuxt-i18n'
+    ],
     router: {
         base
     },
@@ -87,5 +89,30 @@ export default {
             //     });
             // }
         // }
+    },
+
+    i18n: {
+        baseUrl: process.env.NODE_ENV === 'gh-pages' ? 'https://ytvnr.github.io/nuxt-resume/' : 'http://localhost:3000',
+        locales: [
+            {
+                name: 'Français',
+                code: 'fr',
+                iso: 'fr-FR',
+                file: 'fr.js'
+            },
+            {
+                name: 'English',
+                code: 'en',
+                iso: 'en-US',
+                file: 'en.js'
+            }
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        // strategy: 'prefix',
+        // rootRedirect: {
+        //     path: 'fr'
+        // },
+        defaultLocale: 'fr'
     }
 };

@@ -5,6 +5,7 @@
                 <logo />
                 <vuetify-logo />
             </div>
+            <h1>{{ $t('welcome') }}</h1>
             <v-card>
                 <v-card-title class="headline">
                     Welcome to the Vuetify + Nuxt.js template for my awesome
