@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{160:function(e,n,o){"use strict";o.r(n),n.default={welcome:"Welcome",navigation:{about:"Bio",experience:"Experience",education:"Education",skills:"Skills",interests:"Interests"}}}}]);
