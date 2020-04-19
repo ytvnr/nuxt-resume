@@ -1,0 +1,27 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+
+.container {
+  padding: 0;
+}
+
+.section-scroll {
+  height: calc(100vh - 48px);
+  padding: 12px;
+  width: 100%;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+
+  &.is-active {
+    color: $nr-yellow !important;
+  }
+}
+
+// Override VGrid.sass
+@media (min-width: 960px) {
+  .container {
+    max-width: 100%;
+  }
+}

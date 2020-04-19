@@ -18,7 +18,8 @@
     "@nuxt/typescript-runtime": "^0.4.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.8.1",
-    "vuetify": "^2.2.21"
+    "vuetify": "^2.2.21",
+    "vue-scrollactive": "^0.8.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",

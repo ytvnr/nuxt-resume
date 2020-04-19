@@ -1,6 +1,16 @@
 <template>
-    <v-layout column justify-center align-center>
-        <v-flex xs12 sm8 md6>
+    <v-layout column>
+        <nr-about />
+
+        <nr-experience />
+
+        <nr-education />
+
+        <nr-skills />
+
+        <nr-interests />
+
+        <v-flex xs12 sm12 md12>
             <div class="text-center">
                 <logo />
                 <vuetify-logo />
@@ -71,11 +81,21 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
+import About from '~/components/About.vue';
+import Experience from '~/components/Experience.vue';
+import Education from '~/components/Education.vue';
+import Skills from '~/components/Skills.vue';
+import Interests from '~/components/Interests.vue';
+import Logo from '~/components/VLogo.vue';
 import VuetifyLogo from '~/components/VuetifyLogo.vue';
 
 export default {
     components: {
+        'nr-about': About,
+        'nr-experience': Experience,
+        'nr-education': Education,
+        'nr-skills': Skills,
+        'nr-interests': Interests,
         Logo,
         VuetifyLogo
     }

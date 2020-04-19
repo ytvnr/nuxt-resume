@@ -31,11 +31,14 @@ export default {
     /*
      ** Global CSS
      */
-    css: ['@/assets/variables.scss'],
+    css: [
+      '@/assets/variables.scss',
+      '@/assets/main.scss'
+    ],
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: ['~/plugins/scroll-active.js'],
     /*
      ** Nuxt.js dev-modules
      */
@@ -54,7 +57,8 @@ export default {
      ** https://github.com/nuxt-community/vuetify-module
      */
     vuetify: {
-        customVariables: ['~/assets/variables.scss'],
+        customVariables: ['~/assets/variables.scss', '~/assets/main.scss'],
+        treeShake: true,
         theme: {
             dark: true,
             themes: {
