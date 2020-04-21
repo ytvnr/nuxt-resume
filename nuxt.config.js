@@ -38,7 +38,7 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ['~/plugins/scroll-active.js'],
+    plugins: ['~/plugins/scroll-active.js', '~plugins/i18n-resume-data.js'],
     /*
      ** Nuxt.js dev-modules
      */
@@ -46,9 +46,7 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [
-      'nuxt-i18n'
-    ],
+    modules: ['nuxt-i18n'],
     router: {
         base
     },
