@@ -4,7 +4,13 @@ export const state = () => ({
 });
 
 export const mutations = {
-    init(state, payload) {
+    setResume(state, payload) {
         state.data = payload;
+    }
+};
+
+export const actions = {
+    useResume({ commit }, resume) {
+        commit('setResume', resume);
     }
 };
