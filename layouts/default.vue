@@ -1,7 +1,6 @@
 <template>
     <v-app dark>
         <v-app-bar :clipped-left="true" app dense>
-
             <nr-logo />
 
             <v-spacer></v-spacer>

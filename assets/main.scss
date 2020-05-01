@@ -5,9 +5,13 @@
 }
 
 .section-scroll {
-  height: calc(100vh - 48px);
-  padding: 12px;
+  min-height: calc(100vh - 48px);
+  padding: 30px;
   width: 100%;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 a {

@@ -1,24 +1,39 @@
 {
   "basics": {
-    "name": "Jean Do",
-    "label": "Développeur",
+    "name": "Doe",
+    "firstname": "Jean",
+    "label": " 👨‍💻 Développeur",
     "picture": "",
     "email": "john@gmail.fr",
     "phone": "033773636",
     "website": "http://johndoe.fr",
-    "summary": "Un résumé of John Doe...",
+    "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "city": "🍟 Lille",
       "countryCode": "US",
+      "country": "France 🇫🇷",
       "region": "California"
     },
     "profiles": [
       {
         "network": "Twitter",
+        "username": "@john",
+        "url": "http://twitter.com/john",
+        "icon": "mdi-twitter"
+      },
+      {
+        "network": "GitHub",
         "username": "john",
-        "url": "http://twitter.com/john"
+        "url": "http://github.com/john",
+        "icon": "mdi-linkedin"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "john",
+        "url": "http://Linkedin.com/john",
+        "icon": "mdi-github"
       }
     ]
   },
