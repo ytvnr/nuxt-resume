@@ -32,10 +32,25 @@ export default {
         'nr-navigation': Navigation,
         'nr-language-switcher': LanguageSwitcher
     },
-    data() {
-        return {
-            title: 'Vuetify.js'
-        };
+    data: () => ({
+        title: 'Vuetify.js'
+    }),
+
+    beforeDestroy() {
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('resize', this.onResize, { passive: true })
+        }
+    },
+
+    mounted() {
+        this.onResize();
+        window.addEventListener('resize', this.onResize, { passive: true });
+    },
+
+    methods: {
+        onResize() {
+            this.$store.dispatch('viewport/setMobile', window.innerWidth < 760);
+        }
     }
 };
 </script>
@@ -43,9 +58,5 @@ export default {
 <style lang="scss">
 .red {
     background-color: red;
-}
-
-.red {
-    background-color: yellow;
 }
 </style>

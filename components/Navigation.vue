@@ -40,4 +40,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@media screen and (max-width: $break-small) {
+    [class='scrollactive-item'] {
+        display: none;
+    }
+}
+</style>
