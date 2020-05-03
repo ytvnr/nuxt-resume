@@ -4,7 +4,6 @@
             <a :key="section.id" :href="section.id" class="scrollactive-item">
                 {{ $t(`navigation.${section.name}`) }}
             </a>
-            &nbsp;&nbsp;
         </template>
     </scrollactive>
 </template>
@@ -36,11 +35,18 @@ export default {
                 }
             ]
         };
+    },
+    computed: {
+
     }
 };
 </script>
 
 <style scoped lang="scss">
+.scrollactive-item {
+    padding: 0 3px;
+}
+
 @media screen and (max-width: $break-small) {
     [class='scrollactive-item'] {
         display: none;

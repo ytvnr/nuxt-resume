@@ -67,22 +67,12 @@ export default {
         top: calc(100vh - 48px - 75px);
 
         &__links {
-            /*display: flex;*/
-            /*flex-direction: row;*/
-            /*justify-content: center;*/
-
             &--container {
-                /*padding-top: 20px;*/
                 display: flex;
                 flex-direction: row;
-                /*justify-content: space-between;*/
-                /*width: 30%;*/
             }
 
             &--link {
-                /*display: flex;*/
-                /*flex-direction: column;*/
-
                 padding: 0 5px;
 
                 i {
